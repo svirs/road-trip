@@ -10,6 +10,7 @@ export default {
       name: "route",
       type: "array",
       of: [{ type: "stay" }],
+      validation: Rule => Rule.min(2).warning('Needs at least two places to make a route!')
     },
     {
       title: "Notes",
