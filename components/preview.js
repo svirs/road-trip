@@ -3,7 +3,7 @@ import React from "react";
 import { getPlaceData } from "../utils/gmapsUrl";
 
 const Previewer = ({ document: doc }) => {
-  const MAPS_API = process.env.MAPS_API;
+  const MAPS_API = process.env.SANITY_STUDIO_MAPS_API;
   const displayedData = doc.displayed;
   const paramsObject = displayedData.route.reduce(
     (acc, ele, idx, { length }) => {
